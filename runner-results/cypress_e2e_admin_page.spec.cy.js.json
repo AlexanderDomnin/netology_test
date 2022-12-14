@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 1,
+  "passes": 1,
+  "pending": 0,
+  "failures": 0,
+  "start": "2022-12-14T18:21:46.850Z",
+  "duration": 686,
+  "file": "cypress/e2e/admin_page.spec.cy.js"
+}

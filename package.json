@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "cypress": "^12.1.0"
+  },
+  "dependencies": {
+    "cypress-parallel": "^0.10.0"
+  },
+  "scripts" :{
+    "cy:run": "cypress run",
+    "cy:parallel" : "cypress-parallel -s cy:run -t 2 -d cypress/e2e"
+  }
+}

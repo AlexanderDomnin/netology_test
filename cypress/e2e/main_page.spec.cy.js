@@ -1,0 +1,3 @@
+describe('chart card view', () => {
+
+})
