@@ -5,11 +5,8 @@ describe('Test main page', () => {
         cy.visit('/')
     })
     it('Test main page elements', () => {
-        const currentDate = new Date().setHours(0,0,0).toLocaleString().toString().slice(0,-3)
         cy.get('.page-header__title').should('have.text', header.headerTitle);
-        cy.get('.page-nav__day_today')
-            .should('be.visible')
-            .should('have.attr', 'data-time-stamp', `${currentDate}`)
+        cy.get('.page-nav__day_today').should('be.visible')
         cy.get('.page-nav__day_weekend').should('be.visible')
         cy.get('.movie').should('be.visible')
         cy.get('.movie__poster-image')
